@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Duke Slot</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="slot">
+        <div class="slot-header">
+            <h1 class="slot-title">The Duke Slot</h1>
+            <p class="slot-subtitle">Your Luck is on advantage, Try it!</p>
+        </div>
+
+        <div id="slot-body">
+            <div class="slot-mask1"></div>
+            <div class="slot-mask2"></div>
+        </div>
+
+        <div class="slot-content-wrapper">
+            <div class="slot-balance">
+                <p>Balance : $</p>
+                <p id="curr-balance">0</p>
+                <img class="slot-balance-refresh" src="assets/refresh.png" alt="" onclick="refreshBalance()">
+            </div>
+            <button id="spin-button" class="slot-spin-button" onclick="checkingButtonSource(this.id)">SPIN</button>
+            <button id="bonus-spin-button" class="slot-spin-button" onclick="checkingButtonSource(this.id)">BONUS</button>
+            <div class="slot-bonus-spin">
+                <p>Bonus Spin :</p>
+                <p id="curr-bonus-spin">0</p>
+                <p>Turns</p>
+            </div>
+        </div>
+    </section>
+    <script src="pixi.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
